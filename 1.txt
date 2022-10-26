@@ -1,2 +1,6 @@
 hello world-edit-merge testing from one branch to another
+<<<<<<< HEAD
 hih ello
+=======
+Testing sync
+>>>>>>> origin/master
