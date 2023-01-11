@@ -1,6 +1,0 @@
-hello universe-push testing
-<<<<<<< HEAD
-Testing sync - 3
-=======
-Testing sync - 2
->>>>>>> refs/remotes/origin/master
