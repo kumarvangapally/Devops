@@ -1,2 +1,0 @@
-hello world-edit-merge testing from one branch to another
-Testing sync
