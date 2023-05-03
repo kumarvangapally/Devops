@@ -31,10 +31,8 @@ if ! git config user.username &> /dev/null; then
     echo "You are not logged in to GitHub."
     read -p "Enter your GitHub username: " github_username
     read -p "Enter your GitHub access token: " github_token
-    read -p "Enter remote repository URL: "github_remoterepo
     git config --global user.username "$github_username"
     git config --global user.password "$github_token"
-    git remote add origin "$github_remoterepo"
 fi
 
 # Ensure that the current directory is a git repository
@@ -42,6 +40,7 @@ if ! git rev-parse --is-inside-work-tree &> /dev/null; then
     read -p "This directory is not a git repository. Do you want to initialize it? (y/n): " confirm_init
     if [[ "$confirm_init" == "y" ]]; then
         git init
+    	git branch -m 'develop'
     else
         echo "Aborting push. This directory is not a git repository."
         exit 1
